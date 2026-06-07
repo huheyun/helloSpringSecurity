@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<footer th:fragment="commonFooter" class="container mt-5 mb-4">
+    <hr>
+    <p class="text-center text-muted small"
+    th:text="${'실습 수행 일시: ' + #temporals.format(#temporals.createNow(), 'yyyy년 MM월 dd일 (E) a hh:mm:ss', T(java.util.Locale).KOREAN) + ' │ 학번: 2171078 │ 성명: 허현'}"></p>
+</footer>
+</body>
+</html>
